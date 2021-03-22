@@ -33,3 +33,15 @@ aulas.add(aula3);
 Collections.sort(aulas);
 ```
 > Obs: como é uma lista String, ela é ordenada usando a ordem natural da String, que é, a ordem lexografica, ou seja, ordem alfabética
+
+### Aula 01.02 - Preparando Ambiente em todos SOs
+No Linux:
+```bash
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+
+javac -version
+
+java -version
+```
