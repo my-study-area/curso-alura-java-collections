@@ -57,3 +57,9 @@ java -version
 
 ### Aula 01.07 - Ordenando uma lista
 
+## Módulo 02 - Listas de objetos
+### Aula 02.01 - Listas de objetos
+- O que aprendemos neste capítulo:
+- A utilidade em reescrever o método toString.
+- Collections.sort e o método compareTo.
+- Comparator e recursos do Java 8.
