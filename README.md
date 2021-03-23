@@ -66,3 +66,6 @@ java -version
 
 ### Aula 02.02 - Criando listas a partir de objetos próprios
 - Classes que não sobrescrevem o método `toString` utilizam o método `toString` da classe `Object`.
+
+### Aula 02.03 - Reescrevendo o toString da classe Aula
+
