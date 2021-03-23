@@ -63,3 +63,6 @@ java -version
 - A utilidade em reescrever o método toString.
 - Collections.sort e o método compareTo.
 - Comparator e recursos do Java 8.
+
+### Aula 02.02 - Criando listas a partir de objetos próprios
+- Classes que não sobrescrevem o método `toString` utilizam o método `toString` da classe `Object`.
