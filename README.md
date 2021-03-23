@@ -45,3 +45,15 @@ javac -version
 
 java -version
 ```
+
+### Aula 01.03 - Preparando Ambiente em todos SOs
+
+### Aula 01.04 - Removendo elementos de uma lista
+
+### Aula 01.05 - Acessando elementos da lista
+
+### Aula 01.06 - Tentando acessar índices que não existem na lista
+- Ao acessarmos um elemento de um ArrayList recebemos a exception `IndexOutOfBoundsException`
+
+### Aula 01.07 - Ordenando uma lista
+
