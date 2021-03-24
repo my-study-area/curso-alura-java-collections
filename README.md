@@ -69,3 +69,18 @@ java -version
 
 ### Aula 02.03 - Reescrevendo o toString da classe Aula
 
+### Aula 02.04 - Definindo um critério de comparação na classe Aula
+- somente conseguimos ordenar uma coleção com `Collections.sort` se o objeto for uma instância de uma classe que implementa `Comparable`
+```java
+public class Aula implements Comparable<Aula> {
+
+    private String titulo;
+
+    //... restante do código
+
+    @Override
+    public int compareTo(Aula outraAula) {
+        return this.titulo.compareTo(outraAula.titulo);
+    }
+}
+```
