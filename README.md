@@ -97,3 +97,6 @@ aulas.sort(Comparator.comparing(Aula::getTempo));
 - Encapsulamento e princípios de Orientação a Objeto.
 - Programação defensiva.
 
+
+### Aula 03.02 - Criando relacionamentos com coleções
+
