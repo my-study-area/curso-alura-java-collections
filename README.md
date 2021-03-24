@@ -100,3 +100,6 @@ aulas.sort(Comparator.comparing(Aula::getTempo));
 
 ### Aula 03.02 - Criando relacionamentos com coleções
 
+### Aula 03.03 - Declarando as diferentes implementações como List
+- Em vez de declararmos a referência a uma `ArrayList<Aula>` (ou `LinkedList<Aula>`), o ideal é deixarmos mais genérico, utilizando a interface `List`. Por quê? Pelo motivo que não temos motivo para ser super específico na instância que iremos usar. Se declararmos apenas como `List`, poderemos mudar de implementação, como para uma `LinkedList`, sem problema algum de compilação, por não termos nos comprometido com uma implementação em específico.
+
