@@ -86,3 +86,14 @@ public class Aula implements Comparable<Aula> {
 ```
 
 ### Aula 02.05 - Ordenando com Java 8
+```java
+aulas.sort(Comparator.comparing(Aula::getTempo));
+```
+
+## Módulo 03 - Relacionamentos com coleções
+
+### Aula 03.01 - Relacionamentos com coleções
+- A implementação LinkedList.
+- Encapsulamento e princípios de Orientação a Objeto.
+- Programação defensiva.
+
