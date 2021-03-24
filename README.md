@@ -84,3 +84,5 @@ public class Aula implements Comparable<Aula> {
     }
 }
 ```
+
+### Aula 02.05 - Ordenando com Java 8
