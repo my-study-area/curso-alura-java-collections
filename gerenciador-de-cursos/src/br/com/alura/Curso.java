@@ -27,4 +27,8 @@ public class Curso {
 		return Collections.unmodifiableList(aulas);
 	}
 	
+	public void adiciona(Aula aula) {
+		this.aulas.add(aula);
+	}
+	
 }

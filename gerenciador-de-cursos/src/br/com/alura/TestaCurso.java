@@ -11,8 +11,8 @@ public class TestaCurso {
 		
 		System.out.println(aulas);
 		
-		aulas.add(new Aula("Trabalhando com ArrayList", 21));
-		aulas.add(new Aula("Listas de objetos", 20));
+		curso.adiciona(new Aula("Trabalhando com ArrayList", 21));
+		curso.adiciona(new Aula("Listas de objetos", 20));
 		System.out.println(aulas);
 	}
 
