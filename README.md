@@ -105,3 +105,5 @@ aulas.sort(Comparator.comparing(Aula::getTempo));
 
 
 ### Aula 03.04 - Adicionando novas aulas em um Curso
+
+### Aula 03.05 - Encapsulando o acesso às aulas
