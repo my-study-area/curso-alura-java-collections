@@ -109,3 +109,5 @@ aulas.sort(Comparator.comparing(Aula::getTempo));
 ### Aula 03.05 - Encapsulando o acesso às aulas
 
 ### Aula 03.06 - Encapsulando o acesso às aulas
+- `ArrayList` é lenta para adicionar e remover elementos no começo da lista e é rápida para acessar os elementos
+- `LinkedList` é lenta para acessar os elementos e rápida para adicionar e remover elementos no começo da lista
