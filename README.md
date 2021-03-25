@@ -114,3 +114,15 @@ aulas.sort(Comparator.comparing(Aula::getTempo));
 
 ## Mais práticas com relacionamentos
 ### Aula 04.01 - Mais práticas com relacionamentos
+
+### Aula 04.02 - Imprimindo uma unmodifiable list ordenadamente
+- Se quisermos imprimir uma `unmodifiable list` de uma coleção ordenada devemos passar a `unmodifiable list` no construtor de uma `ArrayList` tradicional e utilizar o método `.sort()` de `Collections` para ordená-la.
+```java
+List<Aula> aulasImutaveis = javaColecoes.getAulas();
+System.out.println(aulasImutaveis);
+
+List<Aula> aulas = new ArrayList<>(aulasImutaveis);
+
+Collections.sort(aulas);
+System.out.println(aulas);
+```
