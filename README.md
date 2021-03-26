@@ -148,3 +148,9 @@ Este método também é utilizado para inicializar Listas recém criadas com Nul
 ```java
 List<Type> list = new ArrayList<Type>(Collections.nCopies(1000, (Type)null));
 ```
+## Módulo 05 - O poder dos sets
+### Aula 05.01 - O poder dos sets
+- A interface `Set` é filha da interface `Collection`.
+- O `Set` lembra muito um conjunto matemático e não adiciona os elementos em sequência. Um conjunto (diferente de uma lista, que representa uma sequência de objetos) é uma "sacola", e lá dentro está cheio de objetos, e você não sabe em que ordem eles estão.
+- `HashSet` é uma implementação de `Set`.
+
