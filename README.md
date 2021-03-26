@@ -128,3 +128,5 @@ System.out.println(aulas);
 ```
 
 ### Aula 04.03 - Ordenando as aulas de um curso
+
+### Aula 04.04 - Obtendo o tempo total de aulas
