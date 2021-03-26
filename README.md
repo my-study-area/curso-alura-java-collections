@@ -154,3 +154,8 @@ List<Type> list = new ArrayList<Type>(Collections.nCopies(1000, (Type)null));
 - O `Set` lembra muito um conjunto matemático e não adiciona os elementos em sequência. Um conjunto (diferente de uma lista, que representa uma sequência de objetos) é uma "sacola", e lá dentro está cheio de objetos, e você não sabe em que ordem eles estão.
 - `HashSet` é uma implementação de `Set`.
 
+
+### Aula 05.02 - Características de conjuntos
+- Um `Set` garante que nenhum elemento se repete. Por isso o método `add(..)` devolve um booleano que indica o sucesso da inserção.
+- Há métodos que fazem busca por um objeto, como `contains(..)` ou `remove(..)`, que são muito mais rápidos se comparado com uma lista.
+- Diferentemente de uma lista, um conjunto não define uma ordem. Isso significa que não recebemos os elementos na mesma ordem da inserção.
