@@ -13,6 +13,13 @@ public class ImprimindoAlunosSemAcentos {
         alunos.add("Nico"); 
         
         alunos.forEach(System.out::println);
+        
+        System.out.println(alunos.size());
+        
+
+        boolean adicionou = alunos.add("Pedro");
+        System.out.println(alunos.size());
+        System.out.println("Pedro foi adicionado ao Set? " + adicionou);
 	}
 
 }
