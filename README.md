@@ -163,3 +163,6 @@ List<Type> list = new ArrayList<Type>(Collections.nCopies(1000, (Type)null));
 ### Aula 05.03 - Interface mãe
 - Ambos, `List` e `Set` estendem a interface Collection.
 - a interface `Iterable` é a mãe de `Collections`.
+
+### Aula 05.04 - Imprimindo conjunto
+- Como a uma coleção `Set` não possui uma sequência de elementos ela não possui os métodos `lista.get(1)` ou `lista.remove(2)`.  Como não há uma sequência de elementos, não existe uma posição definida. Imagine que o `Set` é um saco no qual você não conhece o próximo elemento que sai.
