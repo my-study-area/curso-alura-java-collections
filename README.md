@@ -177,4 +177,5 @@ List<Type> list = new ArrayList<Type>(Collections.nCopies(1000, (Type)null));
 ## Módulo 06 - Aplicando o Set no modelo
 ### Aula 06.01 - Aplicando o Set no modelo
 ### Aula 06.02 - Criação da classe aluno
+### Aula 06.03 - Encapsulando o Set
 
