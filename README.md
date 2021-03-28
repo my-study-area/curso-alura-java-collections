@@ -183,4 +183,8 @@ List<Type> list = new ArrayList<Type>(Collections.nCopies(1000, (Type)null));
 - `Collections.emptySet()` é utilizado para pegar um Set vazio e imutável.
 - Quando realizamos operações numa referência de `Collections.emptySet()` recebemos uma `UnsupportedOperationException`.
 
+### Aula 06.06 - Para saber mais: Coleções threadsafe
+Sobre `Collections.synchronizedSet(Set<T> s)`:
+- Uma das características mais interessantes de JVM é que ela sabe trabalhar em paralelo. Internamente isso é feito por meio de Threads que funcionam como pequenos processos dentro da JVM.
 
+- O problema é que as coleções que estamos usando até agora não foram feitas para serem manipuladas em paralelo. No entanto, nada impede que usemos um método da classe Collections para transformar uma coleção comum em uma coleção para threads. É justamente isso que o método faz, retorna um nova coleção que pode ser compartilhada entre threads sem perigos.
