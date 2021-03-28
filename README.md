@@ -178,4 +178,9 @@ List<Type> list = new ArrayList<Type>(Collections.nCopies(1000, (Type)null));
 ### Aula 06.01 - Aplicando o Set no modelo
 ### Aula 06.02 - Criação da classe aluno
 ### Aula 06.03 - Encapsulando o Set
+### Aula 06.04 - Collections.unmodifiableSet(..)
+### Aula 06.05 - Collections.emptySet()
+- `Collections.emptySet()` é utilizado para pegar um Set vazio e imutável.
+- Quando realizamos operações numa referência de `Collections.emptySet()` recebemos uma `UnsupportedOperationException`.
+
 
