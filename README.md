@@ -194,3 +194,21 @@ Sobre `Collections.synchronizedSet(Set<T> s)`:
 ### Aula 07.02 - Considerando hashCode e Equals
 - A  classe String já possui um método para gerar um hashCode a partir do seu conteúdo. Este método é bem eficiente e confiável.
 - Apesar de ser perigoso, se estamos verificando se um elemento pertence a uma implementação de List, só precisamos reescrever o método equals(), já que o método .contains() de List só utiliza o equals para comparação.
+
+### Aula 07.03 - Verificando se está matriculado
+- Devemos implementar o equals e o hashcode em coleção do tipo Set.
+O método equals deve ficar assim:
+```java
+@Override
+public boolean equals(Object obj) {
+    Aluno outroAluno = (Aluno) obj;
+    return this.nome.equals(outroAluno.nome);
+}
+```
+E o hashCode desta maneira:
+```java
+@Override
+public int hashCode(){
+    return this.nome.hashCode();
+}
+```

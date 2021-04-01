@@ -17,6 +17,10 @@ public class TestaCursoComAluno {
 		curso.matricula(aluno3);
 		
 		curso.getAlunos().forEach(System.out::println);
+		
+		System.out.println("Aluno está matriculado?");
+		Aluno adriano = new Aluno("Adriano", 123);
+		System.out.println(curso.estaMatriculado(adriano));
 	}
 
 }
