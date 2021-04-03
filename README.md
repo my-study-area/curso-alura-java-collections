@@ -212,3 +212,15 @@ public int hashCode(){
     return this.nome.hashCode();
 }
 ```
+
+### Aula 07.04 - Programando defensivamente
+- Programar defensivamente é quando realizamos verificações em nosso código antes que os erros aconteçam, como por exeplo, quando um objeto faz uma chamada de um método com valor nulo podemos receber um `NullPointerException`.
+```java
+public Aluno(String nome, int numeroMatricula) {
+    if (nome == null) {
+        throw new NullPointerException("Nome não pode ser nulo");
+    }
+    this.nome = nome;
+    this.numeroMatricula = numeroMatricula;
+}
+```
