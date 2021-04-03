@@ -224,3 +224,7 @@ public Aluno(String nome, int numeroMatricula) {
     this.numeroMatricula = numeroMatricula;
 }
 ```
+
+### Aula 07.05 - Para saber mais: O contrato do método equals
+- o método equals deve seguir alguma condições de acordo com a [documentação](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-)
+- utilize o `equals` gerado em sua IDE.
