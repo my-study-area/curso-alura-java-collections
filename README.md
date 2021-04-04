@@ -252,3 +252,6 @@ while (iterador.hasNext()) {
 - Se utilizarmos um iterator após percorrer os seus elementos recebemos uma `java.util.NoSuchElementException`.
 - Antes da `Collections` usamos a classe `Vector` que atualmente implementa `List` e pode ser utilizada por várias threads simultaneamente, chamado de thread safe. Mas atualmente não é recomendada a sua utilização, já que existem outras formas de se trabalhar com coleções de maneira thread safe.
 
+### Aula 08.02 - HashSet é poderoso, mas se eu precisar de acesso ordenado?
+- A estrutura de dados que usa o poder do hash e que podemos acessar os elementos de maneira previsível, isto é, se adicionarmos os elementos `A, B e C` teremos certeza que `A` é o primeiro, `B` é o segundo e por último `C` é o `LinkedHashSet`.
+- O `LinkedHashSet` nos dá a performance de um HashSet, mas com acesso previsível e ordenado.
