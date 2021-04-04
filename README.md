@@ -228,3 +228,27 @@ public Aluno(String nome, int numeroMatricula) {
 ### Aula 07.05 - Para saber mais: O contrato do método equals
 - o método equals deve seguir alguma condições de acordo com a [documentação](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-)
 - utilize o `equals` gerado em sua IDE.
+
+## Módulo 08 - Outros sets e iterators
+### Aula 08.01 - Outros sets e iterators
+- Conseguimos manter a ordem de um Set usando `LinkedHashSet`, mas não conseguimos utilizar o método `.get(int posicao)` para acessar os elementos.
+- `TreeSet` mantém a ordem natural, porém somente funciona com coleções que implementam `Comparable`
+- Para iterar o elementos dos `Set` antes do java 8 usamos for enhanced. Exemplo:
+```java
+Set<Aluno> alunos = curso.getAlunos();
+for (Aluno aluno : alunos) {
+  System.out.println(aluno);
+}
+```
+- Para iterar os elementos antes do java 5 usavamos o Iterator. Exemplo:
+```java
+Set<Aluno> alunos = javaColecoes.getAlunos();
+Iterator<Aluno> iterador = alunos.iterator();
+
+while (iterador.hasNext()) {
+    System.out.println(iterador.next());
+}
+```
+- Se utilizarmos um iterator após percorrer os seus elementos recebemos uma `java.util.NoSuchElementException`.
+- Antes da `Collections` usamos a classe `Vector` que atualmente implementa `List` e pode ser utilizada por várias threads simultaneamente, chamado de thread safe. Mas atualmente não é recomendada a sua utilização, já que existem outras formas de se trabalhar com coleções de maneira thread safe.
+
