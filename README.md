@@ -255,3 +255,94 @@ while (iterador.hasNext()) {
 ### Aula 08.02 - HashSet é poderoso, mas se eu precisar de acesso ordenado?
 - A estrutura de dados que usa o poder do hash e que podemos acessar os elementos de maneira previsível, isto é, se adicionarmos os elementos `A, B e C` teremos certeza que `A` é o primeiro, `B` é o segundo e por último `C` é o `LinkedHashSet`.
 - O `LinkedHashSet` nos dá a performance de um HashSet, mas com acesso previsível e ordenado.
+
+### Aula 08.03 - TreeSet
+- Para adicionarmos um objeto em um TreeSet ele precisa implementar a interface Comparable. Mas o que fazer se estamos trabalhando com uma instância de uma classe que não temos acesso ou não podemos modificar para implementar Comparable? Nesse caso, o construtor do TreeSet recebe como parâmetro um objeto que implementa Comparator. Dessa forma, o critério de comparação pode ser criado em separado da classe na qual opera.
+
+Exemplo usando Comparable:
+```java
+//Recibo
+package br.com.alura;
+
+import java.math.BigDecimal;
+
+public class Recibo implements Comparable<Recibo>{
+	
+	private String pagador;
+	private BigDecimal valor;
+
+	public Recibo(String pagador, BigDecimal valor) {
+		this.pagador = pagador;
+		this.valor = valor;
+	}
+
+	public String getPagador() {
+		return pagador;
+	}
+
+	public BigDecimal getValor() {
+		return valor;
+	}
+	
+	@Override
+	public String toString() {
+		return "Recibo [pagador=" + pagador + ", valor=" + valor + "]";
+	}
+
+	@Override
+	public int compareTo(Recibo o) {
+		return valor.compareTo(o.valor);
+	}
+	
+}
+
+//TestaRecibo
+package br.com.alura;
+
+import java.math.BigDecimal;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class TestaRecibo {
+
+	public static void main(String[] args) {
+		
+		Recibo recibo1 = new Recibo("Carlos", BigDecimal.valueOf(1000.00));
+		Recibo recibo2 = new Recibo("Miguel", BigDecimal.valueOf(2000.00));
+		Recibo recibo3 = new Recibo("Maria", BigDecimal.valueOf(3000.00));
+		
+		Set<Recibo> listaDeRecibos = new TreeSet<>();
+		listaDeRecibos.add(recibo1);
+		listaDeRecibos.add(recibo2);
+		listaDeRecibos.add(recibo3);
+		
+		listaDeRecibos.forEach(System.out::println);
+	}
+
+}
+```
+Exemplo usando Comparator:
+```java
+package br.com.alura;
+
+import java.util.Comparator;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class TestaAlunoTreeSet {
+
+	public static void main(String[] args) {
+		
+		Aluno aluno1 = new Aluno("Carlos", 5678);
+		Aluno aluno2 = new Aluno("Adriano", 9234);
+		
+		Set<Aluno> listaDeAlunos = new TreeSet<>(Comparator.comparing(Aluno::getNome));
+		
+		listaDeAlunos.add(aluno2);
+		listaDeAlunos.add(aluno1);
+		listaDeAlunos.forEach(System.out::println);
+
+	}
+
+}
+```
