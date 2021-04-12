@@ -346,3 +346,33 @@ public class TestaAlunoTreeSet {
 
 }
 ```
+
+### Aula 08.04 - Recordar e viver
+- Java 8 usando foreach:
+```java
+Set<String> conjunto = new HashSet<>();
+conjunto.add("A");
+conjunto.add("A"); // não adiciona, já existe
+conjunto.add("B");
+
+conjunto.forEach(letra -> {
+    System.out.println(letra);
+});
+```
+
+- Antes do Java 8:
+```java
+for(String letra: conjunto) {
+    System.out.println(letra);
+}
+```
+
+- Antes do Java 5:
+```java
+Set<Aluno> alunos = javaColecoes.getAlunos();
+Iterator<Aluno> iterador = alunos.iterator();
+
+while (iterador.hasNext()) {
+    System.out.println(iterador.next());
+}
+```
