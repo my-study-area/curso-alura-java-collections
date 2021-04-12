@@ -376,3 +376,8 @@ while (iterador.hasNext()) {
     System.out.println(iterador.next());
 }
 ```
+
+### Aula 08.05 - Acesso sincronizado
+- `Vector` é uma Collection que é thread-safe.
+- A classe `Vector` possui as mesmas características que um ArrayList, com a diferença de que o primeiro possui acesso sincronizado e o segundo não.
+
