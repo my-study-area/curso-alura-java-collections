@@ -434,3 +434,30 @@ public class Teste {
     }
 }
 ```
+## Módulo 09 - Qual Collection usar
+### Aula 09.01 - Qual Collection usar
+- Uma coleção é todo mundo que implementa a interface `Collection`.
+- Na `Collection` posuímos os métodos: add, contains, remove, size e etc.
+- Para trabalhar com um punhado de objetos repetidos que estarão em uma sequência de ordem que nós usamos `List`.
+- usamos o `Set` para trabalhar com objetos que não possuem uma ordenação e não podemos conter objetos repetidos.
+- podemos utilizar a interface mãe `Collection` em casos que não temos nenhuma restrição quanto ao punhado de objetos.
+
+### Aula 09.02 - List vs Set
+- List é uma sequência e aceita elementos duplicados. Set não aceita duplicados e não define ordem.
+
+
+### Aula 09.03 - A implementações de Collection
+Exemplos de instânciação:
+- `List<Aluno> alunos = new ArrayList<>();`
+- `ArrayList<Aluno> alunos = new ArrayList<>();`
+- `Collection<Aluno> alunos = new HashSet<>();`
+
+### Aula 09.04 - Qual usar?
+Provavelmente, caso a modelagem do sistema ainda não esteja bem definida, o desenvolvedor irá utilizar a interface `Collection<E>`. Dessa maneira, terá acesso aos métodos básicos de todas as implementações, como `size()`, `add()`, `remove()` e `contains()`. Conforme for sentindo necessidade em algo específico, o desenvolvedor fará poucas mudanças em seu código.
+
+Caso sinta necessidade de fazer uma requisição a um elemento específico através da sua posição, trocará de `Collection<E>` para `List<E>`. Caso perceba que ordem não importa, porém é necessária uma busca bem rápida (e sem repetições), um `Set<E>` é mais apropriado.
+
+Enquanto não sentir essa necessidade, provavelmente a `Collection<`E> será a melhor escolha.
+
+### Aula 09.05 - Qual coleção?
+- A implementação `TreeSet` já ordena os seus elementos na hora da inserção. O critério da ordenação depende e pode ser definido através de um Comparator.
