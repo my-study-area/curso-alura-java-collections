@@ -381,3 +381,17 @@ while (iterador.hasNext()) {
 - `Vector` é uma Collection que é thread-safe.
 - A classe `Vector` possui as mesmas características que um ArrayList, com a diferença de que o primeiro possui acesso sincronizado e o segundo não.
 
+
+### Aula 08.06 - Refazendo à moda antiga
+```java
+List<String> letras = new LinkedList<>();
+letras.add("A");
+letras.add("B");
+letras.add("C");
+
+Iterator<String> iterator = letras.iterator();
+        
+while (iterator.hasNext()) {
+    System.out.println(iterator.next());
+}
+```
