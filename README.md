@@ -483,3 +483,17 @@ matriculaParaAluno.put(123456, "Leonardo Cordeiro");
 ```
 Então no `put`, nós temos que receber como parâmetro um inteiro, que representa a matrícula, e uma String, que representa o nome do aluno.
 
+### Aula 10.04 - Iterando sobre um mapa
+```java
+Map<Integer, String> pessoas = new HashMap<>();
+
+pessoas.put(21, "Leonardo Cordeiro");
+pessoas.put(27, "Fabio Pimentel");
+pessoas.put(19, "Silvio Mattos");
+pessoas.put(23, "Romulo Henrique");
+
+pessoas.keySet().forEach(idade -> {
+    System.out.println(pessoas.get(idade));
+});
+```
+
