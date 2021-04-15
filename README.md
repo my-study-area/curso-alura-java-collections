@@ -461,3 +461,10 @@ Enquanto não sentir essa necessidade, provavelmente a `Collection<`E> será a m
 
 ### Aula 09.05 - Qual coleção?
 - A implementação `TreeSet` já ordena os seus elementos na hora da inserção. O critério da ordenação depende e pode ser definido através de um Comparator.
+
+## Módulo 10 - Mapas
+### Aula 10.01 - Mapas
+- A interface Map.
+- As implementações HashMap e LinkedHashMap.
+- Vantagens e desvantagens do uso do Map.
+
