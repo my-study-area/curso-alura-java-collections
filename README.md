@@ -468,3 +468,9 @@ Enquanto não sentir essa necessidade, provavelmente a `Collection<`E> será a m
 - As implementações HashMap e LinkedHashMap.
 - Vantagens e desvantagens do uso do Map.
 
+### Aula 10.02 - Características dos mapas
+- Se repetimos uma chave, a chave repetida é sobrescrita pela nova. Se uma chave for repetida, a antiga permanece, porém, o valor é sobrescrito pelo novo valor contido na chave passada, sendo o antigo valor "esquecido" pelo `Map`.
+- O valor de um `Map` pode ser repetido, diferente de uma chave.
+- A interface Map mapeia valores para chaves, ou seja, através da chave conseguimos acessar o valor.
+- A interface `Map` **não implementa** a interface `Collection`, apesar de fazer parte da API de `Collections`.
+
