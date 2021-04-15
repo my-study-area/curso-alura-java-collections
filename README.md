@@ -474,3 +474,12 @@ Enquanto não sentir essa necessidade, provavelmente a `Collection<`E> será a m
 - A interface Map mapeia valores para chaves, ou seja, através da chave conseguimos acessar o valor.
 - A interface `Map` **não implementa** a interface `Collection`, apesar de fazer parte da API de `Collections`.
 
+
+### Aula 10.03 - Adicionando elementos em um mapa
+O método utilizado para adicionar um elemento em um `Map` é o método `put`. Ele recebe dois parâmetros, a chave e o valor. Os tipos desses parâmetros dependem do que definimos na hora da instância do objeto. Por exemplo, abaixo criamos um Map que recebe como chave a matrícula do aluno e como valor o seu nome:
+```java
+Map<Integer, String> matriculaParaAluno = new HashMap<>();
+matriculaParaAluno.put(123456, "Leonardo Cordeiro");
+```
+Então no `put`, nós temos que receber como parâmetro um inteiro, que representa a matrícula, e uma String, que representa o nome do aluno.
+
