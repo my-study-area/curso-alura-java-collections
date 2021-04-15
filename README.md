@@ -497,3 +497,6 @@ pessoas.keySet().forEach(idade -> {
 });
 ```
 
+### Aula 10.05 - Garantindo a ordem de inserção de um mapa
+- Para garantir a ordem de inserção em um `Map` podemos utilizar o `LinkedHashMap`. O `LinkedHashMap` continua nos dando a performance de um `HashMap`, mas com acesso previsível e ordenado, seguindo a inserção dos seus elementos.
+
