@@ -500,3 +500,11 @@ pessoas.keySet().forEach(idade -> {
 ### Aula 10.05 - Garantindo a ordem de inserção de um mapa
 - Para garantir a ordem de inserção em um `Map` podemos utilizar o `LinkedHashMap`. O `LinkedHashMap` continua nos dando a performance de um `HashMap`, mas com acesso previsível e ordenado, seguindo a inserção dos seus elementos.
 
+### Aula 10.06 - Criando o mapa de alunos
+- utilizamos o método `.get(Object value)` de um `Map` para acessar o seu valor.
+```java
+Map<Integer, String> pessoas = new HashMap<>();
+pessoas.put(21, "Leonardo Cordeiro");
+System.out.println(pessoas.get(21));
+```
+
