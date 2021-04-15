@@ -508,3 +508,23 @@ pessoas.put(21, "Leonardo Cordeiro");
 System.out.println(pessoas.get(21));
 ```
 
+### Aula 10.07 - Para saber mais: Chaves e Valores
+- Usamos o método `keySet()` do `Map` para acessar um `Set` com as chaves do mapa.
+- Usamos o método `values()` do `Map` para acessar uma `Collection` com os valores do mapa.
+```java
+Map<String, Integer> nomesParaIdade = new HashMap<>();
+nomesParaIdade.put("Paulo", 31);
+nomesParaIdade.put("Adriano", 25);
+nomesParaIdade.put("Alberto", 33);
+nomesParaIdade.put("Guilherme", 26);
+
+//acessa as chaves
+nomesParaIdade.keySet().forEach(System.out::println);
+//acessa os valores
+nomesParaIdade.values().forEach(System.out::println);
+//acessa as chaves e valores
+nomesParaIdade.entrySet().forEach(System.out::println);
+```
+
+### Aula 10.08 - Como continuar?
+### Aula 10.09 - Projeto pronto
